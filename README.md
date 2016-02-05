@@ -8,7 +8,7 @@ Add this lines to your Rails project Gemfile:
 
 ```ruby
 group :test do
-  get 'http_digest_test'
+  gem 'http_digest_test'
 end
 ```
 

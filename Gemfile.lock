@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    http_digest_test (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  http_digest_test!
+
+BUNDLED WITH
+   1.11.2

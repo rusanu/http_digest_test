@@ -10,11 +10,13 @@ module HttpDigestTest
 
           def process(action, *args)
             if @__username
+              method = args[0] if args[0].is_a?(String)
+              method = args[0][:method] if args[0].is_a?(Hash)
               @request.env['HTTP_AUTHORIZATION'] = encode_credentials(
                 username: @__username,
                 password: @__password,
                 uri: @request.env['REQUEST_URI'] || action,
-                method: args[0])
+                method: method)
               @__username = @__password = nil
             end
             process_http_digest_test action, *args

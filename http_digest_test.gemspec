@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = HttpDigestTest::VERSION
   s.authors     = ["Remus Rusanu"]
   s.email       = ["contact@rusanu.com"]
-  s.homepage    = "hhtp://github.com/rusanu/http_digest_test"
+  s.homepage    = "http://github.com/rusanu/http_digest_test"
   s.summary     = "HTTP Digest test suport for Rails controllers"
   s.description = "Add support for testing controllers that require HTTP digest."
   s.license     = "MIT"
